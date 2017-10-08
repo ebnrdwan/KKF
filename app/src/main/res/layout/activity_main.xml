@@ -58,9 +58,10 @@
             app:targetAlpha="1"/>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvFeed"
-            android:layout_marginTop="8dp"
+            android:background="@color/paint_color"
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:scrollbars="none"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
@@ -96,6 +97,7 @@
                         android:id="@+id/wave_head"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
+
                         android:scaleType="centerCrop"
                         frisson:alphaValue="8"
                         frisson:autoTint="true"
