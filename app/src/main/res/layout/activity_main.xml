@@ -64,7 +64,6 @@
             android:scrollbars="none"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar_layout"
             android:layout_width="match_parent"
@@ -98,11 +97,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:scaleType="centerCrop"
-                        frisson:alphaValue="30"
+                        frisson:alphaValue="8"
                         frisson:autoTint="true"
-                        frisson:src="@drawable/img_feed_center_1"
+                        frisson:src="@drawable/back1"
                         frisson:tideCount="4"
-                        frisson:tideHeight="30dp" />
+                        frisson:tideHeight="70dp" />
 
 
                     <ImageView

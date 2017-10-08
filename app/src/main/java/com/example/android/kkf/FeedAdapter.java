@@ -51,7 +51,7 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     void updateItems() {
-        itemsCount = 10;
+        itemsCount = 4;
         notifyDataSetChanged();
     }
 
