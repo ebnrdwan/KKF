@@ -10,6 +10,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,17 +33,19 @@ public class MainActivity extends AppCompatActivity {
         TextView name = (TextView) findViewById(R.id.name);
 
 
+        //try to connect with server
         ELHBasicHttpBinding_IService1 service1 = new ELHBasicHttpBinding_IService1();
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
             StrictMode.setThreadPolicy(policy);
             ELHWorkerInfoContract profile = service1.getWorker(1);
-//          service1.getWorkerAsync(8);
             name.setText(profile.firstName);
+
 
         } catch (Exception e) {
             e.printStackTrace();
+            Log.d("Ex",e.toString());
         }
 
         rvFeed = (RecyclerView) findViewById(R.id.rvFeed);
