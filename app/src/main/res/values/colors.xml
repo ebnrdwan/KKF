@@ -10,6 +10,7 @@
     <color name="fab_color_shadow">#44000000</color>
     <color name="text_like_counter">#2b5a83</color>
     <color name="paint_color">#dddddd</color>
+    <color name="backitems">#e3dad1</color>
     <color name="brown">#8B5E3C</color>
 
 </resources>
